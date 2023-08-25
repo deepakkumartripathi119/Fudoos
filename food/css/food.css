@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLE */
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    /* height: 7.5rem; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+    
+    /* border: 2px solid blue; */
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(42, 41, 41, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#logo {
+    display: inline-block;
+    margin: 0px 34px;
+    /* border: 2px solid red; */
+    line-height: 2px;
+    
+
+
+}
+
+#logo img {
+
+    margin: 0px 5px;
+    height: 80px;
+    width: 80px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+#logo img:hover {
+    width: 115px;
+    height: 115px;
+}
+
+#logo li {
+    list-style: none;
+}
+
+#logo li a {
+    font-family: 'Kablammo', cursive;
+    display: block;
+    color: rgb(253, 196, 9);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 18px;
+    text-shadow: 5px 6px 2px black
+}
+
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Cherry Bomb One', cursive;
+
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#navbar ul li a:hover {
+    background-color: whitesmoke;
+    color: orangered;
+
+
+}
+#navbar ul li a:active {
+    background-color: whitesmoke;
+    color: orangered;
+
+
+}
+
+
+#sign {
+    display: block;
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 40px;
+    padding: 5px 10px;
+
+
+}
+
+#sign a {
+    font-size: 1.6rem;
+    font-family: 'Cherry Bomb One', cursive;
+    color: white;
+    padding: 6px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    background: rgb(255, 162, 0);
+    transition: all 0.2s ease-in-out;
+
+}
+
+#sign a:hover {
+    background-color: rgb(250, 237, 237);
+    color: rgb(255, 162, 0);
+    padding: 13px;
+    font-size: 2.2rem;
+}
+
+
+/* SECTION STYLING :: HOME */
+
+#home {
+
+    font-family: 'Handlee', cursive;
+    /* border: 2px solid violet; */
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/spaghetti-g7eedb4154_1920.jpg') no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-family: 'Handlee', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(223, 166, 7);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.btn:hover {
+    padding: 15px;
+    font-size: 2.5rem;
+    background-color: rgb(244, 235, 235);
+    color: rgb(223, 166, 7);
+    cursor: pointer;
+}
+
+/* Services section */
+
+#services {
+    margin: 34px;
+    display: flex;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    height: 630px;
+}
+
+.services-container>h1 {
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.services-container::before {
+    content: "";
+    position: absolute;
+    background: url('../img/pizza-g3a059e60a_1920.jpg');
+    width: 100%;
+    height: 107.6%;
+    z-index: -1;
+
+
+
+}
+
+#services .box {
+
+    border: 2px solid rgb(253, 156, 12);
+    padding: 34px;
+    margin: 3px 3px;
+    border-radius: 23px;
+    background-color: rgb(251, 219, 170);
+    transition: all 0.1s ease-in-out;
+
+
+
+
+}
+
+#services .box:hover {
+
+    /* border-radius: 30px; */
+    background-color: rgb(238, 149, 16);
+    cursor: pointer;
+    position:relative;
+    bottom: 8px;
+
+}
+
+#services .box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+
+#services .btn {
+    position: relative;
+    left: 30%;
+    top: 20px;
+}
+
+
+#services {}
+
+
+/* Client section */
+#client-section {
+    height: 392px;
+    background-color: rgba(31, 26, 26, 0.3);
+    /* border: 2px solid rgb(7, 241, 73); */
+
+}
+
+#client-section>h1 {
+    font-family: Baloo Bhai, cursive;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/pastrie.jpg');
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.6;
+
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    padding: 34px;
+    /* border: 2px solid red; */
+
+}
+
+
+.client-item {
+
+    padding: 50px;
+}
+
+#clients img {
+    height: 120px;
+    padding: 20px;
+}
+
+/* CONTACT section */
+
+#contact {
+    font-family: 'Handlee', cursive;
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 520px;
+    /* border: 5px solid blue; */
+
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/burger.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* line-height: 30px; */
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    /* line-height: 5px; */
+}
+
+#contact-box form {
+    width: 40%;
+    
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+.btn1{
+    width: 100px;
+    position: relative;
+    left: 50%;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn1:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    height: 40px;
+
+
+}
+
+/* utility classes */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+
+.center {
+    text-align: center;
+}
